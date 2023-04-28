@@ -1,0 +1,955 @@
+/* SITE STYLING (DONT CHANGE)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: 'Jost', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,500&display=swap');
+}
+
+/* SITE STYLING (DONT CHANGE)*/
+
+/*-----------------------------------------------------------------*/
+
+/* START OF NAV STYLING */
+.nav-bar {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.nav-logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+.nav-logo-txt {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+}
+.nav-logo-txt:hover {
+    color: #ffb347;
+}
+
+.nav-bar form .search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-bar form input[type="text"] {
+    border: 3px solid #ffb347;
+    border-radius: 20px;
+    padding: 10px 40px 10px 20px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    margin-right: 10px;
+}
+
+.nav-bar form button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+.nav-links a:hover {
+    color: #ffb347;
+}
+
+
+/* END OF NAV STYLING */
+
+/*-----------------------------------------------------------------*/
+
+/* START OF FOOTER STYLING */
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* END OF FOOTER STYLING */
+
+/*------------------------------------------------------------------*/
+
+/* START OF INDEX STYLING */
+.idx-head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    width: 100%;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #ffb347;*/
+    /*background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);*/
+    /*background: linear-gradient(to right, #ffcc33, #ffb347);*/
+}
+.idx-head-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+}
+.idx-head-left img {
+    max-width: 80%;
+    height: auto;
+}
+
+.idx-head-right {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+    width: 400px;
+}
+.idx-head-right-txt {
+    margin: 20px 0px;
+    color: #000000;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+}
+.idx-head-right-txt a {
+    text-decoration: none;
+    color: #000;
+}
+.idx-head-right-txt a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.idx-trend-container {
+    min-height: 100%;
+    width: 100%;
+}
+.idx-trend-head-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    min-height: 30px;
+    width: 30%;
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+}
+
+.idx-trend-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.idx-trend-table td {
+    padding: 50px;
+}
+
+.idx-trend-table td img {
+    height: 350px;
+    width: 235px;
+    margin: 30px;
+}
+
+.idx-movie-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.idx-trend-table button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.idx-trend-table a {
+    text-decoration: none;
+}
+.idx-trend-table button:hover {
+    color: #ffb347;
+}
+
+
+.idx-build-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    width: 80%;
+}
+
+.idx-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.idx-table td {
+    padding: 20px;
+}
+
+.idx-table-poster {
+    position: relative;
+    width: 240px;
+    height: 360px;
+    text-align: center;
+    background-color: #ffb347;;
+}
+
+.idx-poster-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 2;
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+}
+
+.idx-poster-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.idx-poster-btn:hover {
+    color: #ffb347;
+}
+
+.idx-table-txt {
+    padding: 50px;
+}
+
+.idx-poster-txt2 {
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.idx-poster-txt3 {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.idx-table-btn {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.idx-table-btn:hover {
+    color: #ffb347;
+}
+
+/* END OF INDEX STYLING */
+
+/* ----------------------------------------------------------- */
+
+/* START OF POSTER DETAILS STYLING */
+.poster-header-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 0px;
+    width: 80%;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    border-bottom: 2px solid #000000;
+}
+
+.poster-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    /*background-color: green;*/
+}
+
+.poster-img {
+    margin-right: 20px;
+}
+
+.poster-details-wrapper {
+    flex: 1;
+    /*background-color: red;*/
+}
+
+.poster-details-wrapper table {
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+    border-spacing: 10px;
+}
+
+.poster-details-wrapper th {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.poster-details-wrapper td {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.back-to-posters {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.back-to-posters a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+.back-to-posters a:hover {
+    color: #ffb347;
+}
+
+.poster-btn {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.poster-btn a {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.poster-btn a:hover {
+    color: #ffb347;
+}
+.poster-btn:hover {
+    color: #ffb347;
+}
+
+.poster-btn input[type="button"],
+.poster-btn input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.poster-btn input[type="button"]:hover,
+.poster-btn input[type="submit"]:hover {
+    color: #ffb347;
+}
+.poster-btn2 {
+    width: 80px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.poster-btn2:hover {
+    color: #ffb347;
+}
+
+/* END OF POSTER DETAILS STYLING*/
+
+/* ---------------------------------------------- */
+
+/* START OF POSTERS STYLING */
+.posters-head-container {
+    min-height: 300px;
+    width: 100%;
+}
+.posters-head-img {
+    height: 200px;
+    width: 980px;
+    margin: 0 auto;
+}
+.posters-head-img img {
+    height: 200px;
+    width: 980px;
+    margin-top: 50px;
+}
+
+.posters-shop-container {
+    min-height: 100%;
+    width: 100%;
+    /*background: #ffb347;*/
+    /*background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);*/
+    /*background: linear-gradient(to right, #ffcc33, #ffb347);*/
+}
+.posters-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 30px;
+    width: 80%;
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    border-bottom: 2px solid #000000;
+}
+
+.posters-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.posters-table td {
+    padding: 50px;
+}
+
+.posters-table td img {
+    height: 350px;
+    width: 235px;
+    margin: 30px;
+}
+
+.poster-movie-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.posters-table button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.posters-table a {
+    text-decoration: none;
+}
+.posters-table button:hover {
+    color: #ffb347;
+}
+
+/* END OF POSTERS STYLING */
+
+/* ----------------------------------------------------------------- */
+
+/* START OF NEW POSTER STYLING */
+.new-poster-header-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 0px;
+    width: 80%;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    border-bottom: 2px solid #000000;
+}
+
+.new-poster-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    /*background-color: green;*/
+}
+
+.new-poster-img {
+    position: relative;
+    margin-right: 20px;
+    height: 360px;
+    width: 240px;
+    background-color: #ffb347;
+}
+.new-poster-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 2;
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+}
+.new-upload-poster-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.new-upload-poster-btn:hover {
+    color: #ffb347;
+}
+
+.new-poster-form{
+    display: flex;
+    flex: 1;
+}
+.new-poster-details-wrapper {
+    flex: 1;
+    /*background-color: red;*/
+}
+
+.new-poster-details-wrapper table {
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+    border-spacing: 10px;
+}
+
+.new-poster-details-wrapper th {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.new-poster-details-wrapper td {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.back-to-posters {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.back-to-posters a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+.back-to-posters a:hover {
+    color: #ffb347;
+}
+
+.new-poster-btn {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.new-poster-btn:hover {
+    color: #ffb347;
+}
+/* END OF NEW POSTER STYLING */
+
+/* ---------------------------------------------------------------------------- */
+
+/* START OF DELETE POSTER STYLING */
+.delete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+/* END OF DELETE POSTER STYLING */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START OF CREATE POSTER STYLING */
+.create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+/* END OF CREATE POSTER STYLING */
+
+/* ----------------------------------------------------------------------- */
+
+/* START OF UPDATE POSTER STYLING */
+.update-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+/* END OF UPDATE POSTER STYLING */
+
+/* ---------------------------------------------------------------------------- */
+
+/* START OF SEARCH POSTER RESULTS STYLING */
+.posters-results-container {
+    width: 100%;
+}
+.poster-results-txt {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+
+.back-to-home {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.back-to-home a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid #000000;
+}
+.back-to-home a:hover {
+    color: #ffb347;
+}
+/* END OF SEARCH POSTER RESULTS STYLING*/
+
+/* ------------------------------------------------------------------ */
+
+/* START OF MAIL OFFER STYLING */
+.mail-offer-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background-color: #ffb347;
+}
+
+.mail-offer-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-header-txt {
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.offer-header-txt-2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.offer-input {
+    border: 2px solid #000;
+    border-radius: 40px;
+    padding: 10px 40px 10px 20px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+.offer-btn {
+    border: 2px solid #000;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+}
+/* END OF MAIL OFFER STYLING */
+
+/* ----------------------------------------------------- */
+
+/* START OF SHOW CART STYLING */
+.showcart-empty-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.showcart-table table {
+    width: 80%;
+    margin: 0 auto;
+    border-spacing: 10px;
+    border: 1px solid black;
+
+}
+
+.showcart-table th {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.showcart-table td {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+.showcart-table td a {
+    text-decoration: none;
+    color: #ffb347;
+}
+
+.showcart-table td:first-child {
+    text-align: left;
+}
+
+.showcart-table img {
+    float: left;
+    margin-right: 10px;
+}
+
+.showcart-table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.showcart-btm-btns {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* END OF SHOW CART STYLING */
+
+/* -----------------------------------------------------------*/
+
+/* START OF SIGN UP / LOG IN FORM STYLING */
+
+.signup_form_wrapper {
+    height: 100%;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    background: linear-gradient(to right, #F37335, #FDC830);
+}
+.signup_header {
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+.signup_form {
+    margin: 0 auto;
+    padding: 15px;
+    width: 50%;
+    align-items: center;
+}
+.signup_form button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.signup_form button:hover {
+    color: #ffb347;
+}
+.signup_form p {
+    text-align: center;
+}
+.signup_input {
+    text-align: center;
+}
+.signup_input input {
+    padding: 10px;
+    margin-bottom: 8px;
+}
+.linkto {
+    font-family: 'Jost', sans-serif;
+}
+.linkto a {
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    text-decoration: none;
+    color: #fff;
+}
+.error_msg {
+    font-family: 'Jost', sans-serif;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+.success_msg {
+    font-family: 'Jost', sans-serif;
+    color: green;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* END OF SIGN UP / LOG IN FORM STYLING */
+
+/*------------------------------------------------------------------*/
+
+/* START OF CHECKOUT STYLING */
+.checkout-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+}
+.checkout-txt-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+/* END OF CHECKOUT STYLING */
